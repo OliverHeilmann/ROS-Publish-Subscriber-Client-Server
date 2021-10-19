@@ -27,7 +27,7 @@ cd devel
 cat setup.sh	
 ```
 
-User should run the shell scripts contained in the following folders to run the programs:
+User should run the shell scripts contained in the following folders to run the programs. __NOTE: YOU WILL HAVE TO CHANGE THE SOURCE PATHS TO YOUR WORKING DIRECTORY__:
 1) async: runMe.sh
 2) sync: runMe.sh
 3) serverWithPub: runMe.sh
