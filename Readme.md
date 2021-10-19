@@ -1,5 +1,7 @@
 # Description
-'async' folder contains a publisher/ subscriber asynchronous example python code whereas 'sync' contains a server/ client example python code. Note that these should be used in different examples... (think about multithreading and doing separate processes on other threads vs waiting for some response).
+'async' folder contains a publisher/ subscriber asynchronous example python code whereas 'sync' contains a server/ client example python code. Note that these should be used in different examples... (think about multithreading and doing separate processes on other threads vs waiting for some response). 
+
+__The most noteworthy work is found in [serverWithPub](https://github.com/OliverHeilmann/ROS-Publish-Subscriber-Client-Server/tree/main/src/serverWithPub) as this leverages both the asynchronous publish/subscrib and synchronous client/server ROS functionalities.__
 
 # Instructions...
 In order to make a ROS environment use the following terminal commands.
