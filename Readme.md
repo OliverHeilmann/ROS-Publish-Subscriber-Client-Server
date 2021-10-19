@@ -14,7 +14,7 @@ cd ~//<MY ROS WORKSPACE>/src
 
 catkin_init_workspace
 
-# Check that catkin has created a file called CMakeLists.txt in src using the ls command:
+#check that catkin has created a file called CMakeLists.txt in src using the ls command:
 ls -la
 
 cd ..
@@ -23,11 +23,14 @@ catkin_make
 
 cd devel
 
-# this displays contents of a file (not necessary but a useful command)
-cat setup.sh	
+#this displays contents of a file (not necessary but a useful command)
+cat setup.sh
+
+#check everything is working, run the following in separate terminals
+sh testWorks.sh
 ```
 
-User should run the shell scripts contained in the following folders to run the programs. __NOTE: YOU WILL HAVE TO CHANGE THE SOURCE PATHS TO YOUR WORKING DIRECTORY__:
+User should run the shell scripts contained in the following folders to run the programs. __NOTE: YOU WILL HAVE TO CHANGE THE SOURCE PATHS TO YOUR WORKING DIRECTORY__s:
 1) async: runMe.sh
 2) sync: runMe.sh
 3) serverWithPub: runMe.sh
