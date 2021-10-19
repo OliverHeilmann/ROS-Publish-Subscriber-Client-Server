@@ -1,4 +1,4 @@
-# Run in Linux terminal with 'sh runMe.sh' command
+#Run in Linux terminal with 'sh runMe.sh' command
 source ~/ros_workspace/devel/setup.sh
 gnome-terminal -x sh -c "roscore"
 gnome-terminal -x sh -c "python2 publisher.py __name:= publisherRenamed.py counter:=/demo/incrimenter"
