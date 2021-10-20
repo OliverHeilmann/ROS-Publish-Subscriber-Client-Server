@@ -11,7 +11,7 @@ print "running server/publisher..."
 time.sleep(3)
 
 # Initialise ROS parameteres
-rospy.init_node('topic_publisher' , 'service_server')
+rospy.init_node('~')    # can initialise to ('topic_publisher' , 'service_server') instead?
 pub = rospy.Publisher('counter', std_msgs.msg.String, queue_size=5) # note that we have to change the expected message type from Int32 to String!
 rate = rospy.Rate(2)
 
