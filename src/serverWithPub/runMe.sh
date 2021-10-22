@@ -1,5 +1,5 @@
 #Run in Linux terminal with 'sh runMe.sh' command
-source /media/sf_VMShare/pyROS/sandbox/devel/setup.sh
+source ~/ros_workspace/devel/setup.sh
 
 #init roscore
 gnome-terminal -x sh -c "roscore"
