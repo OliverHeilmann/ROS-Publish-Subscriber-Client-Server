@@ -7,11 +7,11 @@ import time
 import std_msgs
 from std_msgs.msg import Int32
 
-print "running subscriber"
+print("running subscriber")
 time.sleep(3)
 
 def callback(msg):
-    print "Subscriber reading: " + str(msg.data)
+    print("Subscriber reading: " + str(msg.data))
 
 rospy.init_node('topic_subscriber')
 

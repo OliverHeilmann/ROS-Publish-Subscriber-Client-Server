@@ -7,11 +7,11 @@ from basics.srv import WordCount, WordCountResponse
 from std_msgs.msg import Int32
 
 # Wait for roscore bootup
-print "running server/publisher..."
+print("running server/publisher...")
 time.sleep(3)
 
 # Initialise ROS parameteres
-rospy.init_node('~')    # can initialise to ('topic_publisher' , 'service_server') instead?
+rospy.init_node('serviceServer_and_topicPublisher')    # can initialise to ('topic_publisher' , 'service_server') instead?
 pub = rospy.Publisher('counter', std_msgs.msg.String, queue_size=5) # note that we have to change the expected message type from Int32 to String!
 rate = rospy.Rate(2)
 
@@ -20,7 +20,7 @@ count = 1
 def count_words(request):
     global count
     # tell user in consol what is happening
-    print "[INFO {}]: client requested service from server".format(count)
+    print("[INFO {}]: client requested service from server".format(count))
 
     # find number of words
     ans = WordCountResponse(len(request.words.split()))
@@ -32,7 +32,7 @@ def count_words(request):
     pub.publish(pubString)
     
     # update user on status
-    print "[INFO {}]: server has published the client request".format(count)
+    print("[INFO {}]: server has published the client request".format(count))
     
     # incriment up for the terminal prints
     count +=1
